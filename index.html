@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batcomputer | Mission Control</title>
+    <style>
+        /* Batcave Theme Setup */
+        body {
+            background-color: #0b0c10;
+            color: #c5c6c7;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            border: 2px solid #1f2833;
+            padding: 20px;
+            background-color: #1f2833;
+            box-shadow: 0 0 15px #66fcf1;
+        }
+
+        h1 {
+            color: #66fcf1;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        .status-bar {
+            text-align: center;
+            color: #45f3ff;
+            border-bottom: 1px solid #45f3ff;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #45f3ff;
+            border-left: 4px solid #66fcf1;
+            padding-left: 10px;
+        }
+
+        /* Lists styling */
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+
+        li {
+            margin: 10px 0;
+        }
+
+        .critical {
+            color: #ff4d4d;
+            font-weight: bold;
+        }
+
+        /* Interactive Button */
+        .btn {
+            background-color: transparent;
+            color: #66fcf1;
+            border: 1px solid #66fcf1;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-family: inherit;
+            display: block;
+            margin: 20px auto;
+            text-transform: uppercase;
+        }
+
+        .btn:hover {
+            background-color: #66fcf1;
+            color: #0b0c10;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>WAYNE ENTERPRISES</h1>
+        <div class="status-bar">BATCOMPUTER LOG: ACTIVE // SECURE_LINE</div>
+
+        <h2>Active Gotham Missions</h2>
+        <ul>
+            <li class="critical">[CRITICAL] Investigate Arkham Asylum security breach</li>
+            <li>Monitor Joker gang movements in the East End</li>
+            <li>Patrol the Diamond District rooftops at midnight</li>
+        </ul>
+
+        <h2>Utility Belt Gadgets</h2>
+        <ul>
+            <li>Batarangs (x10)</li>
+            <li>Grapnel Gun (Fully Charged)</li>
+            <li>Smoke Pellets (x4)</li>
+        </ul>
+
+        <!-- We will connect this button to JavaScript logic next! -->
+        <button class="btn" onclick="triggerAlert()">Scan Arkham Intel</button>
+    </div>
+
+    <script>
+        function triggerAlert() {
+            alert("BATMAN: The ship mission is complete, but Joker energy readings are spiking in the Lower Depths!");
+        }
+    </script>
+
+</body>
+</html>
+
